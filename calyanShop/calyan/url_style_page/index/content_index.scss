@@ -1,0 +1,147 @@
+@media (min-width: 1920px){
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1024px 1fr; 
+        position: relative;
+        padding: 30px 0;
+        background: linear-gradient(90deg, #2c2c2c00, black, #1c0000), url(../../../../image/relax.jpg);
+        background-size: contain;
+        &::before{
+            position: absolute;
+            content: "";
+            background: url(../../../../image/fog.png);
+            width: 100%;
+            height: 100%;
+            animation: smoke 30s ease-in infinite;
+            background-repeat: repeat-x;
+            background-size: 400%;
+            background-position: center;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            background: url(../../../../image/fog-1.png);
+            width: 100%;
+            height: 100%;
+            animation: smoke 50s linear 0s infinite;
+            background-repeat: repeat-x;
+            background-size: 400%;
+            background-position: center;
+        }
+    }
+    /*******container_one_index******/ 
+    .content > .container_one_index{
+        padding: 40px 10px;
+        grid-column: 2;
+        position: relative;
+        z-index: 1;  
+    }
+    .container_one_index > div{
+        color: white;
+        display: grid;
+        gap: 70px;
+        & > h2{
+            font-family: face;
+            font-size: 42px;
+            letter-spacing: 2px;
+            text-align: center;
+            position: relative;
+            text-shadow: 0px 0px 20px white;
+        }
+        & > p{
+            font-size: 24px;
+            font-family: leto;
+            text-align: center;
+        }
+    }
+    /********container_two_index********/
+    .content > .container_two_index{
+        padding: 40px 10px;
+        grid-column: 2;
+        position: relative;
+        z-index: 1;  
+    }
+    .container_two_index > div{
+        color: white;
+        display: grid;
+        gap: 70px;
+        & > h2{
+            font-family: face;
+            font-size: 42px;
+            letter-spacing: 2px;
+            text-align: center;
+            position: relative;
+            text-shadow: 0px 0px 20px white;
+        }
+    }
+    .two_index_tabacco{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        & > article{
+            display: grid;
+            grid-template-rows: 1fr 3fr;
+            & > h3{
+                font-family: batman;
+                font-size: 24px;
+                letter-spacing: 5px;
+                text-align: center;
+                display: grid;
+                & > span{
+                    font-family: leto;
+                    font-size: 16px;
+                }
+            }
+            & > p{
+                font-family: leto;
+                font-size: 24px;
+                text-align: center;
+            }
+        }
+    }
+    /********container_three_index********/ 
+    .content > .container_three_index{
+        padding: 40px 10px;
+        grid-column: 2;
+        position: relative;
+        z-index: 1;  
+    }
+    .container_three_index > div{
+        color: white;
+        display: grid;
+        gap: 70px;
+        & > h2{
+            font-family: face;
+            font-size: 42px;
+            letter-spacing: 2px;
+            text-align: center;
+            position: relative;
+            text-shadow: 0px 0px 20px white;
+        }
+        & > p{
+            font-size: 24px;
+            font-family: leto;
+            text-align: center;
+        }
+    }
+/********gallery*******/ 
+.container_gallery{
+    grid-column: 2;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    z-index: 1;
+    & > img{
+        width: 300px;
+        box-shadow: 0px 0px 10px 5px white;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0px 0px 10px 5px rgb(109, 0, 0);
+        }
+    }
+}
+
+
+}

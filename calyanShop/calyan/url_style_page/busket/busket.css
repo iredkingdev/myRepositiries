@@ -1,0 +1,118 @@
+.busket {
+  display: grid;
+  grid-template-columns: 1fr 1024px 1fr;
+  position: relative;
+  padding: 30px 0;
+  background: linear-gradient(90deg, rgba(44, 44, 44, 0), black, #1c0000), url(../../../../image/relax.jpg);
+  background-size: contain;
+}
+.busket::before {
+  position: absolute;
+  content: "";
+  background: url(../../../../image/fog.png);
+  width: 100%;
+  height: 100%;
+  -webkit-animation: smoke 30s ease-in infinite;
+          animation: smoke 30s ease-in infinite;
+  background-repeat: repeat-x;
+  background-size: 400%;
+  background-position: center;
+}
+.busket::after {
+  position: absolute;
+  content: "";
+  background: url(../../../../image/fog-1.png);
+  width: 100%;
+  height: 100%;
+  -webkit-animation: smoke 50s linear 0s infinite;
+          animation: smoke 50s linear 0s infinite;
+  background-repeat: repeat-x;
+  background-size: 400%;
+  background-position: center;
+}
+
+.busket_container {
+  padding: 40px 10px;
+  grid-column: 2;
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-family: leto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  justify-items: center;
+}
+
+.busket_row {
+  width: 100%;
+  display: grid;
+  gap: 30px;
+}
+.busket_row > div > h3 {
+  font-size: 24px;
+}
+
+.busket_row_cart {
+  display: grid;
+  gap: 30px;
+}
+
+.busket-cart {
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  box-shadow: 0px 0px 5px 3px #ffffff;
+  background: rgba(255, 255, 255, 0.1019607843);
+  position: relative;
+}
+.busket-cart > div:last-child {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.busket-cart > div:last-child > input {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.busket_price > form {
+  display: grid;
+  gap: 10px;
+}
+.busket_price > form > input {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 5px;
+  font-family: leto;
+  font-size: 18px;
+  color: white;
+  transition: 0.3s;
+  outline: none;
+}
+.busket_price > form > input:focus {
+  box-shadow: 0px 0px 5px 3px brown;
+}
+.busket_price > form > input:last-child {
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.busket_price > form > input:last-child:hover {
+  box-shadow: 0px 0px 5px 3px brown;
+}
+
+.busket-price {
+  text-align: center;
+}
+.busket-price > span {
+  font-size: 24px;
+}
+
+.busket-feedback > h4 {
+  font-size: 24px;
+  text-align: center;
+}/*# sourceMappingURL=busket.css.map */
