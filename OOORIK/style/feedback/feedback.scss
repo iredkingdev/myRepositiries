@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Conv_segoeuil';
+	src: url('../../fonts/segoeuil.eot');
+	src: local('☺'), url('../../fonts/segoeuil.woff') format('woff'), 
+    url('../../fonts/segoeuil.ttf') format('truetype'), 
+    url('../../fonts/segoeuil.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html,
+body{
+    
+    height: 100%;
+}
+body{
+    font-family: 'Conv_segoeuil';
+    position: relative;
+}
+body.no-scroll{
+    overflow-y: hidden;
+}
+@mixin container320px-480px {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 480px;
+    padding: 0 10px;
+}
+
+@mixin container480px-768px {
+    margin: 0 auto;
+    min-width: 480px;
+    max-width: 768px;
+    padding: 0 10px;
+}
+
+@mixin container768px-1024px {
+    margin: 0 auto;
+    min-width: 768px;
+    max-width: 1024px;
+    padding: 0 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .contact{
+        display: grid;
+        gap: 30px;
+        padding: 20px 0;
+    }
+    .contact_info{
+        display: grid;
+        gap: 10px;
+        & > span{
+            & > a{
+                text-decoration: none;
+                color: wheat;
+            }
+        }
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .contact{
+        display: grid;
+        gap: 30px;
+        padding: 20px 0;
+    }
+    .contact_info{
+        display: grid;
+        gap: 10px;
+        & > span{
+            & > a{
+                text-decoration: none;
+                color: wheat;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contact{
+        display: grid;
+        gap: 30px;
+        padding: 20px 0;
+    }
+    .contact_info{
+        display: grid;
+        gap: 10px;
+        & > span{
+            & > a{
+                text-decoration: none;
+                color: wheat;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .contact{
+        display: grid;
+        gap: 30px;
+        padding: 20px 0;
+    }
+    .contact_info{
+        display: grid;
+        gap: 10px;
+        & > span{
+            & > a{
+                text-decoration: none;
+                color: wheat;
+            }
+        }
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1920px) {
+    .contact{
+        display: grid;
+        gap: 30px;
+        padding: 20px 0;
+    }
+    .contact_info{
+        display: grid;
+        gap: 10px;
+        & > span{
+            & > a{
+                text-decoration: none;
+                color: wheat;
+            }
+        }
+    }
+
+}

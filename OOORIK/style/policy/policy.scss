@@ -1,0 +1,21 @@
+.section-policy{
+    padding: 20px 0;
+    position: relative;
+    z-index: 3;
+}
+.policy{
+    display: grid;
+    gap: 30px;
+    &_head{
+        display: flex;
+        justify-content: center;
+    }
+    &_text{
+        text-align: justify;
+        display: grid;
+        gap: 15px;
+        & > span{
+            font-size: 24px;
+        }
+    }
+}
