@@ -1,0 +1,89 @@
+@media (max-width: 1920px){
+    .registration{
+        display: grid;
+        grid-template-columns: 1fr 1024px 1fr; 
+        position: relative;
+        padding: 30px 0;
+        background: linear-gradient(90deg, #2c2c2c00, black, #1c0000), url(../../../../image/relax.jpg);
+        background-size: contain;
+        &::before{
+            position: absolute;
+            content: "";
+            background: url(../../../../image/fog.png);
+            width: 100%;
+            height: 100%;
+            animation: smoke 30s ease-in infinite;
+            background-repeat: repeat-x;
+            background-size: 400%;
+            background-position: center;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            background: url(../../../../image/fog-1.png);
+            width: 100%;
+            height: 100%;
+            animation: smoke 50s linear 0s infinite;
+            background-repeat: repeat-x;
+            background-size: 400%;
+            background-position: center;
+        }
+    }
+    .registration_container{
+        padding: 40px 10px;
+        grid-column: 2;
+        position: relative;
+        z-index: 1;  
+    }
+    .reg-head{
+        color: white;
+        font-family: leto;
+        display: grid;
+        justify-items: center;
+        gap: 15px;
+    }
+    .reg-block{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        color: white;
+        font-family: leto;
+    }
+    .reg-block_enterance{
+        grid-column: 3;
+    }
+    .rigistration-form{
+        display: grid;
+        gap: 15px;
+        & > div{
+            & > input{
+                width: 100%;
+                background-color: transparent;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid white;
+                padding: 5px;
+                font-family: leto;
+                font-size: 20px;
+                color: white;
+            }
+            &:last-child{
+                display: flex;
+                & > label{
+                    font-family: leto;
+                    font-size: 20px;
+                    color: white;
+                    cursor: pointer;
+                    padding: 10px;
+                    border: 1px solid white;
+                }
+                & > input{
+                    display: none;
+                }
+            }
+        }
+        
+    }
+    
+
+}

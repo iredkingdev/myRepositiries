@@ -1,0 +1,55 @@
+@media (max-width: 1920px) {
+  .content_photo {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .article-photo {
+    width: 250px;
+    background: antiquewhite;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+  }
+
+  .content_photo-image {
+    width: 250px;
+    display: grid;
+    align-items: center;
+    background-color: #5b5b5b;
+  }
+  .content_photo-image > img {
+    width: 100%;
+  }
+
+  .content_photo-info {
+    color: rgb(0, 0, 0);
+  }
+
+  .content_photo-date {
+    display: grid;
+    gap: 5px;
+    padding: 10px 10px;
+  }
+
+  .content_photo-favor {
+    padding: 10px 10px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .content_photo-favor-like > button {
+    color: red;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
+  .content_photo-favor-dlike > button {
+    color: rgb(80, 0, 0);
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+}/*# sourceMappingURL=photo.css.map */
