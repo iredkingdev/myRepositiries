@@ -1,0 +1,12 @@
+.shop-pa {
+  color: white;
+  font-family: leto;
+}
+
+.download-shop {
+  display: grid;
+  gap: 30px;
+}
+.download-shop > div {
+  display: grid;
+}/*# sourceMappingURL=pa_shop.css.map */

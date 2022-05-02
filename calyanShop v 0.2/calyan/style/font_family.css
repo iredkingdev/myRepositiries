@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'leto';
+    src: url('../fonts/family_fonts/LetoTextSansDefect.eot');
+    src: url('../fonts/family_fonts/LetoTextSansDefect.eot') format('embedded-opentype'),
+        url('../fonts/family_fonts/LetoTextSansDefect.woff2') format('woff2'),
+        url('../fonts/family_fonts/LetoTextSansDefect.woff') format('woff'),
+        url('../fonts/family_fonts/LetoTextSansDefect.ttf') format('truetype'),
+        url('../fonts/family_fonts/LetoTextSansDefect.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'batman';
+    src: url('../fonts/family_fonts/bBatmanRobinson.eot');
+    src: url('../fonts/family_fonts/bBatmanRobinson.eot') format('embedded-opentype'),
+        url('../fonts/family_fonts/bBatmanRobinson.woff2') format('woff2'),
+        url('../fonts/family_fonts/bBatmanRobinson.woff') format('woff'),
+        url('../fonts/family_fonts/bBatmanRobinson.ttf') format('truetype'),
+        url('../fonts/family_fonts/bBatmanRobinson.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'face';
+    src: url('../fonts/family_fonts/NeutralFaceRegular.eot');
+    src: url('../fonts/family_fonts/NeutralFaceRegular.eot') format('embedded-opentype'),
+        url('../fonts/family_fonts/NeutralFaceRegular.woff2') format('woff2'),
+        url('../fonts/family_fonts/NeutralFaceRegular.woff') format('woff'),
+        url('../fonts/family_fonts/NeutralFaceRegular.ttf') format('truetype'),
+        url('../fonts/family_fonts/NeutralFaceRegular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

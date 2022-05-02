@@ -1,0 +1,331 @@
+@import url(../../url_style_page/index/content_index.css);
+@import url(../../url_style_elem/footer/footer.css);
+@import url(../../url_style_page/photo/photo.css);
+@import url(../../url_style_page/shop/shop.css);
+@import url(../../url_style_page/busket/busket.css);
+@import url(../../url_style_page/registration/registration.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@-webkit-keyframes footer {
+  0% {
+    background-size: 100% 200%;
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-size: 100% 200%;
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes footer {
+  0% {
+    background-size: 100% 200%;
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-size: 100% 200%;
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes smoke {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes smoke {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes color {
+  0% {
+    text-shadow: 0px 0px 5px wheat;
+    color: wheat;
+  }
+  50% {
+    text-shadow: 0px 0px 15px wheat;
+    color: white;
+  }
+  100% {
+    text-shadow: 0px 0px 5px wheat;
+    color: wheat;
+  }
+}
+@keyframes color {
+  0% {
+    text-shadow: 0px 0px 5px wheat;
+    color: wheat;
+  }
+  50% {
+    text-shadow: 0px 0px 15px wheat;
+    color: white;
+  }
+  100% {
+    text-shadow: 0px 0px 5px wheat;
+    color: wheat;
+  }
+}
+@media (min-width: 1920px) {
+  /*********header****/
+  header {
+    box-shadow: 0px 0px 10px 5px #474747;
+    position: relative;
+    padding: 30px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../image/bg.jpg");
+    display: grid;
+    grid-template-columns: 1fr 1024px 1fr;
+    -webkit-animation: smoke 30s infinite;
+            animation: smoke 30s infinite;
+    background-size: cover;
+  }
+  header::before {
+    position: absolute;
+    content: "";
+    background: url(../../image/fog.png);
+    width: 100%;
+    height: 100%;
+    -webkit-animation: smoke 30s ease-in infinite;
+            animation: smoke 30s ease-in infinite;
+    background-repeat: repeat-x;
+    background-size: 400%;
+    background-position: center;
+  }
+  header::after {
+    position: absolute;
+    content: "";
+    background: url(../../image/fog-1.png);
+    width: 100%;
+    height: 100%;
+    -webkit-animation: smoke 50s linear 0s infinite;
+            animation: smoke 50s linear 0s infinite;
+    background-repeat: repeat-x;
+    background-size: 400%;
+    background-position: center;
+  }
+
+  header > .header_container {
+    position: relative;
+    grid-column: 2;
+    padding: 0 10px;
+    display: grid;
+    gap: 70px;
+    z-index: 1;
+  }
+
+  .header_navigation {
+    display: grid;
+    gap: 30px;
+  }
+  .header_navigation > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header_navigation > div > h2 > a {
+    -webkit-animation: color 3s ease-in infinite;
+            animation: color 3s ease-in infinite;
+    font-family: batman;
+    font-size: 42px;
+    letter-spacing: 2px;
+  }
+  .header_navigation > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header_navigation > nav > ul {
+    justify-content: center;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .header_navigation > nav > ul > li > a {
+    color: white;
+    font-family: leto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transition: 0.3s;
+    font-size: 24px;
+  }
+  .header_navigation > nav > ul > li > a:hover {
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+
+  .header_hello > div {
+    display: grid;
+    gap: 10px;
+    color: white;
+    justify-items: center;
+  }
+  .header_hello > div > h3 {
+    font-family: face;
+    letter-spacing: 2px;
+  }
+  .header_hello > div > p {
+    font-family: leto;
+    font-size: 24px;
+    width: 300px;
+    text-align: center;
+  }
+
+  .header_button > div {
+    display: flex;
+    justify-content: center;
+  }
+  .header_button > div > div {
+    letter-spacing: 2px;
+    width: 300px;
+    border: 1px solid white;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    color: white;
+    font-family: face;
+    font-size: 18px;
+    position: relative;
+    transition: 0.4s;
+    overflow: hidden;
+  }
+  .header_button > div > div:hover::before {
+    left: 100%;
+  }
+  .header_button > div > div:active::before {
+    left: 100%;
+  }
+  .header_button > div > div:focus::before {
+    left: 100%;
+  }
+  .header_button > div > div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, transparent, rgba(191, 226, 255, 0.3), transparent);
+    transition: left 0.7s;
+  }
+
+  /********feedback********/
+  .feedback {
+    display: grid;
+    grid-template-columns: 1fr 1024px 1fr;
+    position: relative;
+    padding: 30px 0;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .feedback > .feedback_container {
+    padding: 40px 10px;
+    grid-column: 2;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feedback_container > section {
+    color: white;
+    display: grid;
+    justify-items: center;
+  }
+  .feedback_container > section > h2 {
+    font-family: face;
+    font-size: 42px;
+    letter-spacing: 2px;
+    position: relative;
+    text-shadow: 0px 0px 20px white;
+    text-align: center;
+  }
+  .feedback_container > section > p {
+    font-family: leto;
+    font-size: 24px;
+    width: 300px;
+    text-align: center;
+  }
+
+  .feedback_form > form {
+    display: grid;
+    gap: 40px;
+  }
+  .feedback_form > form > .name {
+    display: grid;
+    gap: 20px;
+  }
+  .feedback_form > form > .name > input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border-bottom: 1px solid white;
+    font-size: 24px;
+    font-family: leto;
+    transition: 0.3s;
+  }
+  .feedback_form > form > .name > input:focus {
+    box-shadow: 0px 0px 10px 5px white;
+  }
+  .feedback_form > form > .name > input::-moz-placeholder {
+    color: rgb(77, 77, 77);
+    text-transform: uppercase;
+  }
+  .feedback_form > form > .name > input:-ms-input-placeholder {
+    color: rgb(77, 77, 77);
+    text-transform: uppercase;
+  }
+  .feedback_form > form > .name > input::placeholder {
+    color: rgb(77, 77, 77);
+    text-transform: uppercase;
+  }
+  .feedback_form > form > .button > input {
+    border: 1px solid white;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-family: leto;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .feedback_form > form > .button > input:hover {
+    box-shadow: 0px 0px 10px 5px white;
+  }
+  .feedback_form > form > .button > input:focus {
+    transform: scale(0.95);
+  }
+}/*# sourceMappingURL=index.css.map */

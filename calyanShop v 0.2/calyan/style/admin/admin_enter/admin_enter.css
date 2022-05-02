@@ -1,0 +1,355 @@
+@import url(../../../url_style_elem/footer/footer.css);
+@import url(../../../url_style_elem/pa_shop/pa_shop.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@-webkit-keyframes footer {
+  0% {
+    background-size: 100% 200%;
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-size: 100% 200%;
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes footer {
+  0% {
+    background-size: 100% 200%;
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-size: 100% 200%;
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes smoke {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes smoke {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1920px) {
+  .enterance {
+    flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: 1fr 1024px 1fr;
+    position: relative;
+    padding: 30px 0;
+    background: linear-gradient(90deg, rgba(44, 44, 44, 0), black, #1c0000), url(../../../../image/relax.jpg);
+    background-size: contain;
+  }
+  .enterance::before {
+    position: absolute;
+    content: "";
+    background: url(../../../../image/fog.png);
+    width: 100%;
+    height: 100%;
+    -webkit-animation: smoke 30s ease-in infinite;
+            animation: smoke 30s ease-in infinite;
+    background-repeat: repeat-x;
+    background-size: 400%;
+    background-position: center;
+  }
+  .enterance::after {
+    position: absolute;
+    content: "";
+    background: url(../../../../image/fog-1.png);
+    width: 100%;
+    height: 100%;
+    -webkit-animation: smoke 50s linear 0s infinite;
+            animation: smoke 50s linear 0s infinite;
+    background-repeat: repeat-x;
+    background-size: 400%;
+    background-position: center;
+  }
+
+  .enterance_container {
+    padding: 40px 10px;
+    grid-column: 2;
+    position: relative;
+    z-index: 1;
+  }
+
+  .enterance_container-head > div {
+    display: grid;
+    gap: 10px;
+    color: white;
+    justify-items: center;
+  }
+  .enterance_container-head > div > h2 {
+    font-family: face;
+    letter-spacing: 2px;
+  }
+  .enterance_container-head > div > p {
+    font-family: leto;
+    font-size: 24px;
+    width: 300px;
+    text-align: center;
+  }
+
+  .enterance_container-enter > .error {
+    color: red;
+    display: grid;
+    justify-items: center;
+  }
+
+  .enter {
+    display: grid;
+    justify-items: center;
+    padding: 10em 0;
+  }
+
+  .enter {
+    display: grid;
+    gap: 20px;
+  }
+  .enter > div > input {
+    outline: none;
+    padding: 5px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 16px;
+    font-family: leto;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .enter > div > input:focus {
+    box-shadow: 0px 0px 5px 3px rgb(85, 0, 0);
+  }
+  .enter > .form-submit {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .enter > .form-submit > input {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .enter > .form-submit > input:active {
+    box-shadow: 0px 0px 5px 3px rgb(85, 0, 0);
+  }
+
+  /**********adminpanel********/
+  .admin {
+    display: grid;
+    grid-template-areas: "nav nav" "panel content";
+    padding: 50px 0;
+  }
+
+  .admin_nav {
+    grid-area: nav;
+    border-bottom: 1px solid white;
+    padding: 50px 0;
+  }
+  .admin_nav > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  .admin_nav > ul > li {
+    font-size: 34px;
+    font-family: leto;
+    color: white;
+  }
+  .admin_nav > ul > li > a {
+    color: white;
+    transition: 0.4s;
+  }
+  .admin_nav > ul > li > a:hover {
+    text-shadow: 0px 0px 15px brown;
+  }
+  .admin_nav > ul > li > .undo {
+    color: white;
+    transition: 0.4s;
+    transform: rotate(0deg);
+    display: block;
+  }
+  .admin_nav > ul > li > .undo:hover {
+    transform: rotate(-360deg);
+    text-shadow: 0px 0px 15px brown;
+  }
+
+  .admin_panel {
+    grid-area: panel;
+    border-right: 1px solid white;
+    padding-right: 10px;
+  }
+
+  .admin_content {
+    grid-area: content;
+  }
+
+  .admin_panel-nav > div {
+    color: white;
+    text-shadow: 0px 0px 15px brown;
+    font-size: 24px;
+    font-family: leto;
+  }
+  .admin_panel-nav > ul {
+    display: grid;
+    gap: 15px;
+  }
+  .admin_panel-nav > ul > li > a {
+    color: white;
+    font-size: 24px;
+    font-family: leto;
+    transition: 0.3s;
+  }
+  .admin_panel-nav > ul > li > a:hover {
+    text-shadow: 0px 0px 15px brown;
+  }
+
+  .admin_content {
+    padding: 10px;
+  }
+  .admin_content > div {
+    color: white;
+    text-shadow: 0px 0px 15px brown;
+    font-size: 28px;
+    font-family: leto;
+  }
+  .admin_content > .download-image {
+    color: white;
+    text-shadow: 0px 0px 15px brown;
+    font-size: 28px;
+    font-family: leto;
+  }
+
+  /********dl-photo*****/
+  .download-photo {
+    display: grid;
+    gap: 20px;
+  }
+  .download-photo > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .download-photo > div > label {
+    cursor: pointer;
+    border: 2px solid black;
+    box-shadow: 0px 0px 3px 1px white;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .download-photo > div > input {
+    background-color: transparent;
+    padding: 5px;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0px 0px 3px 1px white;
+    font-size: 18px;
+    font-family: leto;
+  }
+
+  #dl-image {
+    display: none;
+  }
+
+  .delete-photo > input {
+    outline: none;
+    cursor: pointer;
+    border: 2px solid black;
+    box-shadow: 0px 0px 3px 1px white;
+    font-size: 18px;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    font-family: leto;
+  }
+
+  .download-image_delete > .info-delete-photo {
+    margin-bottom: 30px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px 2px white;
+  }
+  .download-image_delete > .info-delete-photo > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0;
+  }
+  .download-image_delete > .info-delete-photo > div > span {
+    font-size: 16px;
+  }
+
+  /*******blog ******/
+  .download-blog {
+    display: grid;
+    gap: 20px;
+  }
+  .download-blog > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .download-blog > div > label {
+    cursor: pointer;
+    border: 2px solid black;
+    box-shadow: 0px 0px 3px 1px white;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .download-blog > div > input {
+    background-color: transparent;
+    padding: 5px;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0px 0px 3px 1px white;
+    font-size: 18px;
+    font-family: leto;
+  }
+
+  #descr-blog {
+    background-color: transparent;
+    padding: 5px;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0px 0px 3px 1px white;
+    font-size: 18px;
+    font-family: leto;
+  }
+}/*# sourceMappingURL=admin_enter.css.map */
