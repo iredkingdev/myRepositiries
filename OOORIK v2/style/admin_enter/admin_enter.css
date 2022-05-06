@@ -1,0 +1,158 @@
+.enter > div {
+  display: grid;
+  justify-items: center;
+  gap: 25px;
+}
+
+.admin_enter {
+  padding: 10em;
+}
+
+.form-enter {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+}
+.form-enter > input {
+  background: transparent;
+  padding: 5px;
+  border: none;
+  border: 1px solid rgb(255, 255, 255);
+  outline: none;
+  transition: 0.3s;
+  width: 100%;
+}
+.form-enter > input:focus {
+  box-shadow: 0px 0px 10px 5px white;
+}
+.form-enter > input:last-child {
+  cursor: pointer;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+}
+.form-enter > input:last-child:hover {
+  box-shadow: 0px 0px 10px 5px white;
+}
+
+.head-download {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+}
+.head-download > a {
+  color: white;
+  border: 1px solid wheat;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1803921569);
+  transition: 0.3s;
+}
+.head-download > a:hover {
+  box-shadow: 0px 0px 5px 3px white;
+  background: rgba(255, 168, 168, 0.1803921569);
+}
+
+.form-download {
+  background: rgba(255, 255, 255, 0.1803921569);
+  padding: 20px;
+  display: grid;
+  width: 50%;
+  gap: 10px;
+  border-radius: 15px;
+}
+
+.form-download_name {
+  display: grid;
+  gap: 5px;
+}
+.form-download_name > input {
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  padding: 5px;
+}
+
+.form-download_value-img {
+  justify-content: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5px;
+}
+.form-download_value-img > input {
+  display: none;
+}
+.form-download_value-img > label {
+  color: white;
+  border: 1px solid wheat;
+  background: rgba(255, 255, 255, 0.1803921569);
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.form-download_value-img > label:hover {
+  box-shadow: 0px 0px 5px 3px white;
+  background: rgba(255, 168, 168, 0.1803921569);
+}
+
+.form-download_submit {
+  justify-content: start;
+  display: grid;
+}
+.form-download_submit > input {
+  color: white;
+  border: 1px solid wheat;
+  background: rgba(255, 255, 255, 0.1803921569);
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 10px;
+}
+.form-download_submit > input:hover {
+  box-shadow: 0px 0px 5px 3px white;
+  background: rgba(255, 168, 168, 0.1803921569);
+}
+
+.history {
+  display: grid;
+  gap: 30px;
+}
+
+.history_block {
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 2px solid;
+  display: grid;
+  padding: 20px 0;
+  gap: 10px;
+}
+.history_block_col-one > div {
+  width: 180px;
+  display: grid;
+  align-items: center;
+}
+.history_block_col-one > div > img {
+  width: 100%;
+}
+.history_block_col-two {
+  display: grid;
+}
+
+.history_block_delete > input {
+  padding: 5px;
+  cursor: pointer;
+  width: 180px;
+  background: rgba(133, 133, 133, 0.5019607843);
+  outline: none;
+  color: white;
+  border: 2px solid wheat;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.history_block_delete > input:hover {
+  box-shadow: 0px 0px 5px 3px white;
+}/*# sourceMappingURL=admin_enter.css.map */
