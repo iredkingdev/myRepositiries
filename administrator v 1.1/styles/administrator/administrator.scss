@@ -1,0 +1,134 @@
+.administrator{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    &_visual{
+        display: flex;
+        height: 100%;
+        gap: 5px;
+    }
+}
+.a-panel{
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 50px 0;
+    width: 280px;
+    & > span{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        color: #797979;
+        cursor: pointer;
+        &:hover{
+            background: linear-gradient(180deg, #dfdfdf, #ffffff00, #dfdfdf);
+        }
+    }
+}
+.a-panel_users_table{
+    border: 1px solid black;
+    padding: 5px;
+    border-collapse: collapse;
+    & > tbody{
+        & > tr{
+            border: 1px solid black;
+            padding: 5px;
+            border-collapse: collapse;
+
+            & > th{
+                border: 1px solid black;
+                padding: 5px;
+                border-collapse: collapse;
+                background: #f1f1f1;
+                font-size: 12px;
+            }
+            & > td{
+                border: 1px solid black;
+                padding: 5px;
+                border-collapse: collapse;
+                font-size: 12px;
+                text-align: center;
+            }
+            & > .setting{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                background: #f1f1f1;
+                & > form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+                    & > input{
+                        letter-spacing: 1px;
+                    }
+                }
+                /*& > span{
+                    cursor: pointer;
+                    &:hover{
+                        background: linear-gradient(180deg, #dfdfdf, #ffffff00, #dfdfdf);
+                    }
+                }*/
+            }
+            
+        }
+    }    
+}
+
+.active-a-panel{
+    background: linear-gradient(180deg, #dfdfdf, #ffffff00, #dfdfdf);
+}
+.height-con{
+    height: 100%;
+}
+.a-panel_users{
+    position: relative;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 0;
+    & > form{
+        display: flex;
+        & > input{
+            
+            width: 100%;
+            padding: 5px;
+            &:nth-child(2){
+                width: 100px;
+            }
+            &:nth-child(3){
+                width: 100px;
+            }
+        }
+    }
+}
+.warning-lock-user{
+    background-color: rgb(255, 126, 126);
+    color: white;
+}
+
+/***********Добавление контента*******/ 
+.a-add-content{
+    position: relative;
+    left: 0%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding: 20px 0;
+} 
+.add-content > form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.search-content > form:first-child{
+    display: flex;
+    & > input{
+        width: 100%;
+    }
+}
+.search-content > form:last-child{
+    display: flex;
+}

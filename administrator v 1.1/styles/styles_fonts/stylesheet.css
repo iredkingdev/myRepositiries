@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'NeutralFace';
+    src: url('../../fonts_word/NeutralFace/NeutralFaceBold.eot');
+    src: url('../../fonts_word/NeutralFace/NeutralFaceBold.eot') format('embedded-opentype'),
+        url('../../fonts_word/NeutralFace/NeutralFaceBold.woff2') format('woff2'),
+        url('../../fonts_word/NeutralFace/NeutralFaceBold.woff') format('woff'),
+        url('../../fonts_word/NeutralFace/NeutralFaceBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeutralFace';
+    src: url('../../fonts_word/NeutralFace/NeutralFaceRegular.eot');
+    src: url('../../fonts_word/NeutralFace/NeutralFaceRegular.eot') format('embedded-opentype'),
+        url('../../fonts_word/NeutralFace/NeutralFaceRegular.woff2') format('woff2'),
+        url('../../fonts_word/NeutralFace/NeutralFaceRegular.woff') format('woff'),
+        url('../../fonts_word/NeutralFace/NeutralFaceRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
