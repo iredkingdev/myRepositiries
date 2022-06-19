@@ -1,0 +1,197 @@
+@import url(../../myShabloon.css);
+@import url(../enter/enter.css);
+@import url(../administrator/administrator.css);
+@media (min-width: 1024px) and (max-width: 1920px) {
+  header {
+    position: relative;
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 5px 3px rgb(203, 203, 203);
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav_block-brand {
+    color: green;
+  }
+  .nav_ul {
+    display: flex;
+  }
+  .nav_ul > li > a {
+    padding: 20px;
+    transition: 0.3s;
+    color: #797979;
+    display: block;
+  }
+  .nav_ul > li > a:hover {
+    background-color: #dcdcdc;
+    padding: 20px;
+  }
+  .nav_ul > li > .nav_li-active {
+    background-color: #dcdcdc;
+    padding: 20px;
+  }
+
+  .content {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .con_head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .con_head > div {
+    width: 320px;
+  }
+  .con_head > div > img {
+    width: 100%;
+  }
+  .con_head > h2 {
+    color: green;
+  }
+  .con_head > h2 > span {
+    color: white;
+    text-shadow: 0 0 10px #006d00;
+  }
+  .con_head > p {
+    border-left: 5px solid green;
+    padding-left: 25px;
+  }
+
+  .con_products {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .products_description {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .products_description > h3 {
+    color: green;
+  }
+  .products_description > p {
+    border-left: 5px solid green;
+    padding-left: 25px;
+  }
+
+  .products_cart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cart {
+    width: 280px;
+    background-color: aliceblue;
+  }
+
+  .cart_visual {
+    position: relative;
+  }
+  .cart_visual > form {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+  .cart_visual > form > input {
+    position: inherit;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: rgba(61, 61, 61, 0.4117647059);
+    border: none;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s;
+    font-size: 34px;
+  }
+  .cart_visual > form > input:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 5px 3px #ccc;
+  }
+
+  .cart_description {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .con_wall {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .fast {
+    max-width: 800px;
+  }
+  .fast_image {
+    max-width: 800px;
+  }
+  .fast_image > img {
+    width: 100%;
+  }
+
+  .fast_sub-image {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .fast_sub-image_send-coment > textarea {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    border: 2px solid rgb(197, 197, 197);
+    outline: none;
+    width: 801px;
+    font-family: "NeutralFace";
+    letter-spacing: 1px;
+    resize: none;
+  }
+  .fast_sub-image_send-coment > div > input {
+    border: 1px solid #c5c5c5;
+    outline: none;
+    padding: 10px;
+    font-family: "NeutralFace";
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    background: linear-gradient(180deg, green, green);
+    color: white;
+  }
+  .fast_sub-image_send-coment > div > input:active {
+    background: linear-gradient(180deg, #267700, #00c81c);
+  }
+
+  .fast_sub-image_coment > details > summary {
+    cursor: pointer;
+    padding-bottom: 20px;
+  }
+
+  .sub-image_coment-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .sub-image_coment-block_info {
+    display: flex;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=index.css.map */
